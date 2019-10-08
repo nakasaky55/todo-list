@@ -1,0 +1,67 @@
+.container-fluid {
+    background-color: #420039;
+    min-height: 800px;
+}
+
+.container {
+    background-color: white;
+    min-height: 800px;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.undone {
+  border: 1px solid red;
+}
+.done {
+  border: 1px solid #00cc99;
+}
+.description {
+  width: 100%;
+}
+
+.list-group {
+  list-style: none;
+}
+
+.undone,
+.done {
+  font-family: "Shadows Into Light", cursive;
+  cursor: pointer;
+  font-size: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+
+.done:hover {
+  border: none;
+  background-color: #00cc99;
+  color: white;
+}
+
+.undone:hover {
+  border: none;
+  background-color: #d72638;
+  color: white;
+}
+
+.head-section {
+  display: flex;
+  justify-content: center;
+}
