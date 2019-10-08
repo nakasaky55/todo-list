@@ -26,16 +26,11 @@ function addToList() {
 }
 
 const render = status => {
-  let todos;
-  if (status == "undone") {
-    todos = toDoList.filter(({ status }) => status == false);
-  } else if(status == 'done'){
 
-  }
   //render everything
   const todo = toDoList
     .map((item, i) => {
-      if (item.status == false) {
+      if (item.status == false && item.description != "") {
         return `<div class="${item.status ? "done" : "undone"}">
             <div class="description" onclick="toggleStatus(${i})">${
           item.description
@@ -48,12 +43,12 @@ const render = status => {
 
   const done = toDoList
     .map((item, i) => {
-      if (item.status == true) {
+      if (item.status == true && item.description != "") {
         return `<div class="${item.status ? "done" : "undone"}">
         <div class="description" onclick="toggleStatus(${i})">${
           item.description
         }</div>
-        <div><button class="btn btn-dark" onclick="removeItem(${i})">X</button></div>
+        
     </div>`;
       }
     })
@@ -84,6 +79,15 @@ const toggleStatus = i => {
   render();
   //   render(doneList);
 };
+
+const showDeleted = () => {
+    let deleted = toDoList.map ( item => {
+        if(item.status == "deleted")
+        return `<li>${item.description}</li>`
+    }).join("");
+
+    document.getElementById('deleted-item').innerHTML = deleted;
+}
 
 //get local storage
 render();

@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/66444ff849.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="/img/sellotaped-note.png" type="image/png">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -34,11 +35,17 @@
             id="inputVal"
           />
           <button
-            style="margin:10px 0"
             class="btn btn-outline-dark"
             onclick="addToList()"
           >
             Add
+          </button>
+          <button
+            class="btn btn-outline-danger"
+            onclick="showDeleted()"
+            data-toggle="modal" data-target="#deletedModal"
+          >
+            Show deleted item
           </button>
         </div>
         <hr class="my-4" />
@@ -55,11 +62,11 @@
       </div>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal" tabindex="-1" role="dialog" id="deletedModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+            <h5 class="modal-title">Your deleted item</h5>
             <button
               type="button"
               class="close"
@@ -70,7 +77,9 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="deleted-item"></div>
+            <ul id="deleted-item">
+
+            </ul>
           </div>
           <div class="modal-footer">
             <button
@@ -80,7 +89,6 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>

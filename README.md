@@ -13,7 +13,7 @@ The following **required** functionalities are completed (this is a sample):
 * [x] User can remove item on to do list or done list.
 * [x] User can mark an item as done item by clicking them, it will move to a new field with new border.
 * [x] User can switch done or need to do by clicking them.
-* []  User can mark done job with strike through.
+* [-]  User can mark done job with strike through ( I mark it with green ).
 
 The following **optional** features are implemented:
 
