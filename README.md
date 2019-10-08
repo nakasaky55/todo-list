@@ -9,7 +9,6 @@ One or two sentence summary of your project.
 ## User Stories
 
 The following **required** functionalities are completed (this is a sample):
-
 * [x] User can add a new line to their to do list
 * [x] User can remove item on to do list or done list.
 * [x] User can mark an item as done item by clicking them, it will move to a new field with new border.
@@ -20,6 +19,7 @@ The following **optional** features are implemented:
 
 * [x] Add favicon to the page
 * [x] Animation on an element
+* [x] Data is stored on Local
 
 
 The following **additional** features are implemented:
