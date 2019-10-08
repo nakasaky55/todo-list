@@ -2,7 +2,7 @@
 
 Created with love by: `Nguyen Anh Khoa`
   
-View online at: `Your URL here`
+View online [here](https://trusting-boyd-2ef687.netlify.com/)
   
 One or two sentence summary of your project. 
 
