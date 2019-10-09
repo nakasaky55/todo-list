@@ -12,6 +12,18 @@ let getLocal = () => {
 
 let toDoList = getLocal();
 let removeList = [];
+let addButton = document.getElementById('add-button');
+console.log(addButton)
+addButton.addEventListener("keyup", function(event) {
+    console.log(event)
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      addToList();
+    }
+  });
 
 function addToList() {
   const input = document.getElementById("inputVal").value;

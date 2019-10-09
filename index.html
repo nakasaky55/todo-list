@@ -9,7 +9,11 @@
       src="https://kit.fontawesome.com/66444ff849.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="/img/sellotaped-note.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="/img/sellotaped-note.png"
+      type="image/png"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -37,13 +41,16 @@
           <button
             class="btn btn-outline-dark"
             onclick="addToList()"
+            type="submit"
+            id="add-button"
           >
             Add
           </button>
           <button
             class="btn btn-outline-danger"
             onclick="showDeleted()"
-            data-toggle="modal" data-target="#deletedModal"
+            data-toggle="modal"
+            data-target="#deletedModal"
           >
             Show deleted item
           </button>
@@ -60,6 +67,16 @@
           </div>
         </div>
       </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="container my-footer">
+          <a href="https://github.com/nakasaky55/todo-list" target="_blank"
+          >Contribute</a
+        >
+        <p>Created with love by @Nakasaky55</p>
+        </div>
+      </footer>
     </div>
 
     <div class="modal" tabindex="-1" role="dialog" id="deletedModal">
@@ -77,9 +94,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <ul id="deleted-item">
-
-            </ul>
+            <ul id="deleted-item"></ul>
           </div>
           <div class="modal-footer">
             <button

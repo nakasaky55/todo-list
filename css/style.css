@@ -1,6 +1,6 @@
 .container-fluid {
     background-color: #420039;
-    min-height: 800px;
+    min-height: 950px;
 }
 
 .container {
@@ -68,4 +68,10 @@ h1 {
 
 .btn { 
     margin: 10px 5px;
+}
+
+.my-footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 50px;
 }
